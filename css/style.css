@@ -1,0 +1,190 @@
+html,body{
+ 
+  min-height: 100%;
+}
+body{
+   background-color:  #eeecec;
+}
+body{
+  height: 100vh;
+  
+}
+header{
+    height: 10%;
+    background-color:#292522;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#banner{
+    width: 40%;
+    
+
+}
+
+nav li {
+    
+    display: inline;
+    margin:  0 60px  0px 15px;
+    
+}
+
+nav a {
+   
+    font-family: system-ui, -apple-system, Helvetica, Arial, sans-serif;
+    text-transform: uppercase;
+    color: #38bfe4;
+    font-weight: bold;
+    font-size: 22px;
+    text-decoration: none;
+    transition: 0.5s;
+}
+nav a:hover{
+    color: #65848e;
+    transition: 0.5s;
+}
+nav li {
+    
+  display: inline;
+  margin:  0 60px  0px 15px;
+  
+}
+
+
+.nav-list {
+  list-style: none;
+  display: flex;
+}
+
+.nav-list li {
+  letter-spacing: 3px;
+  margin-left: 32px;
+}
+
+.mobile-menu {
+  display: none;
+  cursor: pointer;
+}
+
+.mobile-menu div {
+  width: 32px;
+  height: 2px;
+  background: #fff;
+  margin: 8px;
+  transition: 0.3s;
+}
+
+@media (max-width: 999px) {
+  body {
+    overflow-x: hidden;
+  }
+  .nav-list {
+    position: absolute;
+    top: 8vh;
+    right: 0;
+    width: 50vw;
+    height: 92vh;
+    background: #292522;;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    transform: translateX(100%);
+    transition: transform 0.3s ease-in;
+  }
+  .nav-list li {
+    margin-left: 0;
+    opacity: 0;
+  }
+  .mobile-menu {
+    display: block;
+  }
+}
+
+.nav-list.active {
+  transform: translateX(0);
+}
+.feed{
+  font-family: system-ui, -apple-system, Helvetica, Arial, sans-serif;
+}
+
+@keyframes navLinkFade {
+  from {
+    opacity: 0;
+    transform: translateX(50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+.mobile-menu.active .line1 {
+  transform: rotate(-45deg) translate(-8px, 8px);
+}
+
+.mobile-menu.active .line2 {
+  opacity: 0;
+}
+
+.mobile-menu.active .line3 {
+  transform: rotate(45deg) translate(-5px, -7px);
+}
+
+h2{
+    margin: 40px;
+    text-align: center;
+    font-family: system-ui, -apple-system, Helvetica, Arial, sans-serif;
+    font-weight: 600;
+    font-size: 30px;
+
+}
+.jogos {
+  padding: 24px;
+  height: 80%;
+  padding-bottom: 100px;
+    text-align: center;
+    max-width: 100%;
+    margin-top: 20px;
+  
+   
+ 
+}
+img{
+  padding: 24px;
+  
+}
+
+#games{
+  
+    border-radius: 10px;
+    width: 300px;
+    -moz-transition: all 0.3s;
+    -webkit-transition: all 0.3s;
+    transition: all 0.3s;
+    border-radius: 8px;
+}
+
+#games:hover{
+    -moz-transform: scale(1.1);
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+}
+footer{
+  position: absolute;
+  align-items: center;
+  background: #1f2a22;
+  width: 100%;
+  height: 100px;
+  }
+#text-footer {
+  padding: 8px;
+  font-family: system-ui, -apple-system, Helvetica, Arial, sans-serif;
+  font-size: 12px;
+  color: #65848e;
+}
+@media (max-width: 999px) {
+body {
+  overflow-x: hidden;
+}
+}

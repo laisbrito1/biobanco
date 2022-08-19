@@ -1,0 +1,208 @@
+body{
+  background-color:  #eeecec;
+}
+header{
+    
+    background-color:#292522;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+#banner{
+    width: 40%;
+    
+
+}
+
+nav li {
+    
+    display: inline;
+    margin:  0 60px  0px 15px;
+    
+}
+
+nav a {
+   
+    font-family: system-ui, -apple-system, Helvetica, Arial, sans-serif;
+    text-transform: uppercase;
+    color: #38bfe4;
+    font-weight: bold;
+    font-size: 22px;
+    text-decoration: none;
+    transition: 0.5s;
+}
+nav a:hover{
+    color: #65848e;
+    transition: 0.5s;
+}
+
+
+.nav-list {
+    list-style: none;
+    display: flex;
+  }
+  
+  .nav-list li {
+    letter-spacing: 3px;
+    margin-left: 32px;
+  }
+  
+  .mobile-menu {
+    display: none;
+    cursor: pointer;
+  }
+  
+  .mobile-menu div {
+    width: 32px;
+    height: 2px;
+    background: #fff;
+    margin: 8px;
+    transition: 0.3s;
+  }
+  
+  @media (max-width: 999px) {
+    body {
+      overflow-x: hidden;
+    }
+    .nav-list {
+      position: absolute;
+      top: 8vh;
+      right: 0;
+      width: 50vw;
+      height: 92vh;
+      background:#292522;
+      flex-direction: column;
+      align-items: center;
+      justify-content: space-around;
+      transform: translateX(100%);
+      transition: transform 0.3s ease-in;
+    }
+    .nav-list li {
+      margin-left: 0;
+      opacity: 0;
+    }
+    .mobile-menu {
+      display: block;
+    }
+  }
+  
+  .nav-list.active {
+    transform: translateX(0);
+  }
+  .feed{
+    font-family: system-ui, -apple-system, Helvetica, Arial, sans-serif;
+  }
+ 
+  @keyframes navLinkFade {
+    from {
+      opacity: 0;
+      transform: translateX(50px);
+    }
+    to {
+      opacity: 1;
+      transform: translateX(0);
+    }
+  }
+  
+  .mobile-menu.active .line1 {
+    transform: rotate(-45deg) translate(-8px, 8px);
+  }
+  
+  .mobile-menu.active .line2 {
+    opacity: 0;
+  }
+  
+  .mobile-menu.active .line3 {
+    transform: rotate(45deg) translate(-5px, -7px);
+  }
+
+
+h2,p{
+    text-align: center;
+    font-family: system-ui, -apple-system, Helvetica, Arial, sans-serif;
+}
+h2{
+    font-family: system-ui, -apple-system, Helvetica, Arial, sans-serif;
+    padding: 20px;
+    font-size: 50px;
+}
+p{
+    font-size: 20px;
+    padding: 8px;
+}
+body{
+  height: 100vh;
+  
+}
+.display{
+  padding: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+section{
+    
+    display: grid;
+    grid-template-columns: repeat(5,8rem);
+    grid-template-rows: repeat(4,8rem);
+    grid-gap:6px;
+    perspective: 800px;
+   
+}
+.card{
+  position: relative;
+  transform-style: preserve-3d;
+  transition: all 2s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  
+}
+
+.face, .back{
+    
+   height: 100%;
+   width: 100%;
+   position: absolute;
+   pointer-events: none;
+}
+.back{
+  
+  background-image: url("img/jogologo.svg");
+  background-size:100%;
+
+  background-repeat: no-repeat;
+  background-position: center;
+  backface-visibility: hidden;
+}
+.toggleCard{
+  transform: rotateY(180deg);
+}
+.face{
+  transform: rotateY(-180deg);
+}
+#link a {
+
+  width: 30%;
+  padding: 30px;
+  display: flex;
+  font-family: system-ui, -apple-system, Helvetica, Arial, sans-serif;
+  text-align: center;
+  text-decoration: #38bfe4;
+  transition: 0.3s;
+}
+
+footer{
+    align-items: center;
+    background: #1f2a22;
+    width: 100%;
+    height: 100px;
+    }
+#text-footer {
+    font-family: system-ui, -apple-system, Helvetica, Arial, sans-serif;
+    font-size: 12px;
+    color: #65848e;
+}
+@media (max-width: 999px) {
+  body {
+    overflow-x: hidden;
+  }
+  }

@@ -1,0 +1,104 @@
+
+
+.container{
+    padding: 30px;
+    justify-content: center;
+    display: grid;
+    grid-template-columns: repeat(4,15rem);
+    grid-template-rows: repeat(4,15rem);
+}
+button{
+    border-radius: 8px;
+    width: 200px;
+    height: 200px;
+    padding: 30px;
+  
+}
+
+.tecla_tim{
+    background-image: url(img/joaopinto.svg);
+    background-size:100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    backface-visibility: hidden;
+}
+button:hover{
+    transform: scale(1.1);
+}
+.tecla_pom{
+    background-image: url(img/coruja.svg);
+    background-size:101%;
+
+    background-repeat: no-repeat;
+    background-position: center;
+    backface-visibility: hidden;
+}
+.tecla_clap{
+    background-image: url(img/arara.svg);
+    background-size:101%;
+
+    background-repeat: no-repeat;
+    background-position: center;
+    backface-visibility: hidden;
+}
+.tecla_tim{
+    background-image: url(img/joaopinto.svg);
+    background-size:101%;
+
+    background-repeat: no-repeat;
+    background-position: center;
+    backface-visibility: hidden;
+}
+.tecla_puff{
+    background-image: url(img/curicaca.svg);
+    background-size:101%;
+
+    background-repeat: no-repeat;
+    background-position: center;
+    backface-visibility: hidden;
+}
+.tecla_splash{
+    background-image: url(img/aruaca.svg);
+    background-size:101%;
+
+    background-repeat: no-repeat;
+    background-position: center;
+    backface-visibility: hidden;
+}
+.tecla_toim{
+    background-image: url(img/gaviao.svg);
+    background-size:101%;
+
+    background-repeat: no-repeat;
+    background-position: center;
+    backface-visibility: hidden;
+}
+.tecla_psh{
+    background-image: url(img/noivinha.svg);
+    background-size:101%;
+
+    background-repeat: no-repeat;
+    background-position: center;
+    backface-visibility: hidden;
+}
+.tecla_tic{
+    background-image: url(img/carcara.svg);
+    background-size:101%;
+
+    background-repeat: no-repeat;
+    background-position: center;
+    backface-visibility: hidden;
+}
+
+h2{
+    font-size: 24px;
+    padding: 30px;
+    text-align: center;
+    font-family: system-ui, -apple-system, Helvetica, Arial, sans-serif;
+}
+p{
+    padding: 10px;
+    font-size: 20px;
+    text-align: center;
+    font-family: system-ui, -apple-system, Helvetica, Arial, sans-serif;
+}
